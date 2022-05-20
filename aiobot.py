@@ -33,7 +33,7 @@ async def help_command(message: types.Message):
 async def buttons_user(message: types.Message):
 	keyboard = types.ReplyKeyboardMarkup()
 	button1 = types.InlineKeyboardButton(text="Сайт колледжа", url="tehcollege.rv.ua")
-	button2 = types.InlineKeyboardButton(text="Создатель бота", url="t.me/KaitoKaze")
+	button2 = types.InlineKeyboardButton(text="Создатель бота", url="")
 	keyboard = types.InlineKeyboardMarkup(row_width=1)
 	keyboard.add(button1, button2)
 	await message.reply("Вот твои кнопки", reply_markup=keyboard)
