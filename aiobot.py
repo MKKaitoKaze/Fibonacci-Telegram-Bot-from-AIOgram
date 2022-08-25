@@ -10,9 +10,10 @@ from aiogram.types import ReplyKeyboardRemove, \
     ReplyKeyboardMarkup, KeyboardButton, \
     InlineKeyboardMarkup, InlineKeyboardButton
 from time import sleep
+from tokenfile import tokens
 
 logging.basicConfig(level=logging.INFO)
-API_TOKEN = ''#Token Bot
+API_TOKEN = tokens #Token Bot
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 dp = Dispatcher(bot, storage=MemoryStorage())
